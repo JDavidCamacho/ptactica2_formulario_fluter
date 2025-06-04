@@ -4,30 +4,69 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    //throw UnimplementedError();
     return MaterialApp(
       title: "Formulario de Registro",
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        primaryColor: Color(0XFF1E3A8A),
+        primaryColor: const Color(0XFF1E3A8A),
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color(0XFF1E3A8A),
-          secondary: Color(0XFFF6B7280),
+          seedColor: const Color(0XFF1E3A8A),
+          secondary: const Color(0XFF6B7280),
         ),
         useMaterial3: true,
       ),
-      home: RegistrationFormsScreen(),
+      home: const RegistrationFormsScreen(),
       debugShowCheckedModeBanner: false,
-    )
+    );
   }
 }
- class RegistrationFormsScreen{
 
- }
+class RegistrationFormsScreen extends StatelessWidget {
+  const RegistrationFormsScreen({super.key});
 
+  static const Color primaryNavu = Color(0xFF1E3A6A);
+  static const Color backgroundGray = Color(0xFFF9FAFB);
+
+  @override
+  Widget build(BuildContext context) {
+   return Container(
+     padding: EdgeInsets.all(24),
+     decoration: BoxDecoration(),
+     color: Colors.white,
+     borderRadius: BorderRadius.circular(12),
+     boxShadow:[
+       BoxShadow(
+         color: secondaryGray.withOpacity(0.1),
+         blurRadius: 10,
+         offset: Offset(0, 4),
+
+       ),
+     ],
+   ),
+    child.Column(
+    Children : [
+      Icon(Icons.confirmation_num),
+    SizedBox(height: 12,),
+    Text(
+    "datos personales"
+    style : TextStyle(
+    FontSize:24,
+    fontWeight: fontWeight.bold,
+    color: primaryNavu,
+    ),
+    ),
+    SizedBox(height: 8),
+    Text( "complete todos los campos "
+
+    style:TextStyle(fontSize: 14, color: backgroundGray),
+
+    ),
+    ],
+    ),
+   );
+  }

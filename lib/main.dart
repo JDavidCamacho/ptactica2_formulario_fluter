@@ -75,10 +75,10 @@ class RegistrationFormsScreen extends StatelessWidget {
 
           SizedBox(height: 8,),
 
-
+//nombre
           Text("Nombre",
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
               color: primaryNavu,
             ),
@@ -90,7 +90,38 @@ class RegistrationFormsScreen extends StatelessWidget {
             ),
           ),
 
+//apellido
+        Text("Apellido",
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+          color: primaryNavu,
+        ),
+        ),
 
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'ingrese su apellido',
+            ),
+          ),
+
+//usuario
+
+        Text("Usuario",
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+          color: primaryNavu,
+        ),
+        ),
+
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'ingrese su usuario',
+            ),
+          ),
 
         ],
       ),

@@ -123,6 +123,35 @@ class RegistrationFormsScreen extends StatelessWidget {
             ),
           ),
 
+//contraseña
+
+        Text("Contrasenia",
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: primaryNavu,
+          ),
+        ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'ingrese su contrasenia',
+            ),
+          ),
+
+          Text("telefono",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: primaryNavu,
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'ingrese su telefono',
+            ),
+          ),
         ],
       ),
 

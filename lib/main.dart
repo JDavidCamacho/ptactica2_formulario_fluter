@@ -139,6 +139,22 @@ class RegistrationFormsScreen extends StatelessWidget {
             ),
           ),
 
+
+
+
+          Text("Correo",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: primaryNavu,
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'ingrese su correo',
+            ),
+          ),
           Text("telefono",
             style: TextStyle(
               fontSize: 18,
@@ -150,6 +166,25 @@ class RegistrationFormsScreen extends StatelessWidget {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               hintText: 'ingrese su telefono',
+            ),
+          ),
+
+          SizedBox(height: 16), // Espacio antes del botón
+          ElevatedButton(
+            onPressed: () {
+              // Acción del botón
+              print("Botón presionado");
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: primaryNavu,
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ),
+            child: const Text(
+              'Registrar',
+              style: TextStyle(fontSize: 16, color: Colors.white),
             ),
           ),
         ],
